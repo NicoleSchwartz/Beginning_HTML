@@ -13,33 +13,18 @@
 
 <!-- Taken from Quackit.com!-->
 
-
-<script type="text/javascript" src="xbMarquee.js"></script><style type="text/css">
-	div.marqueecenter1 { text-align: center; }
-	div.marqueecenter2 { margin-left: auto; margin-right: auto; }
-	div.marqueeleft1 { text-align: left; }
-	div.marqueeleft2 { margin-left: 0; margin-right: auto; }
-	div.marqueeright1 { text-align: right; }
-	div.marqueeright2 { margin-left: auto; margin-right: 0; }
-</style>
-
+<script type="text/javascript" src="/javascript/codes/xbMarquee.js"></script>
 <script type="text/javascript">
 <!--
-//set the marquee parameters
-function init() { ltr_marquee.start(); }
-var ltr_marquee_Text = 'JavaScript scrolling text';
-var ltr_marquee_Direction = 'right';
-var ltr_marquee_Contents='<span style="font-family:Comic Sans MS;font-size:24pt;white-space:nowrap;">' + ltr_marquee_Text + '</span>';
-ltr_marquee = new xbMarquee('ltr_marquee', '19px', '90%', 6, 100, ltr_marquee_Direction, 'scroll', ltr_marquee_Contents);
-window.setTimeout( init, 200);
+	//set the marquee parameters
+	function init() { rtl_marquee.start(); }
+	var rtl_marquee_Text = 'JavaScript scrolling text';
+	var rtl_marquee_Direction = 'left';
+	var rtl_marquee_Contents='<span style="font-family:Comic Sans MS;font-size:12pt;white-space:nowrap;">' + rtl_marquee_Text + '</span>';
+	rtl_marquee = new xbMarquee('rtl_marquee', '19px', '90%', 6, 100, rtl_marquee_Direction, 'scroll', rtl_marquee_Contents);
+	window.setTimeout( init, 200);
 -->
 </script>
-<div id="ltr_marqueecontainer" name="ltr_marqueecontainer" style="position: relative; overflow: hidden; height: 46px; width: 1098px;">
-<div id="ltr_marquee" name="ltr_marquee" style="position: relative; visibility: visible; left: -444px;" onmouseover="xbMarquee.dispatchUIEvent(event, 'ltr_marquee', 'mouseover')" onmouseout="xbMarquee.dispatchUIEvent(event, 'ltr_marquee', 'mouseout')" onclick="xbMarquee.dispatchUIEvent(event, 'ltr_marquee', 'click')"><nobr>
-<span style="font-family:Comic Sans MS;font-size:24pt;white-space:nowrap;">JavaScript scrolling text</span>
-</nobr>
-</div>
-</div>
 
 </body>
 </html>
