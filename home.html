@@ -13,15 +13,15 @@
 
 <!-- Taken from Quackit.com!-->
 
-<script type="text/javascript" src="/javascript/codes/xbMarquee.js"></script>
+<script type="text/javascript" src="xbMarquee.js"></script>
 <script type="text/javascript">
 <!--
 	//set the marquee parameters
-	function init() { rtl_marquee.start(); }
-	var rtl_marquee_Text = 'JavaScript scrolling text';
-	var rtl_marquee_Direction = 'left';
-	var rtl_marquee_Contents='<span style="font-family:Comic Sans MS;font-size:12pt;white-space:nowrap;">' + rtl_marquee_Text + '</span>';
-	rtl_marquee = new xbMarquee('rtl_marquee', '19px', '90%', 6, 100, rtl_marquee_Direction, 'scroll', rtl_marquee_Contents);
+	function init() { fast_marquee.start(); }
+	var fast_marquee_Text = 'JavaScript scrolling text';
+	var fast_marquee_Direction = 'right';
+	var fast_marquee_Contents='<span style="font-family:Comic Sans MS;font-size:12pt;white-space:nowrap;">' + fast_marquee_Text + '</span>';
+	fast_marquee = new xbMarquee('fast_marquee', '19px', '90%', 6, 10, fast_marquee_Direction, 'scroll', fast_marquee_Contents);
 	window.setTimeout( init, 200);
 -->
 </script>
